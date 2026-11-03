@@ -1,0 +1,87 @@
+/* Letra de cuaderno para las notas. Fredoka y Andika se cargan desde .streamlit/config.toml */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Patrick+Hand&display=swap");
+
+/* Ancho máximo del contenido */
+[data-testid="stMainBlockContainer"] { max-width: 1040px; padding-top: 5rem; }
+
+/* ---------- Textos ---------- */
+.ul-etiqueta {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 36px;
+}
+.ul-titulo {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #2E3A59;
+}
+.ul-titulo-inicio { font-size: 54px; }
+.ul-idea, .ul-intro { margin: 0; max-width: 740px; font-size: 22px; line-height: 1.5; font-weight: 700; color: #2E3A59; }
+.ul-intro { font-size: 20px; font-weight: 400; color: #3E4A69; }
+.ul-instruccion { margin: 0; font-size: 19px; line-height: 1.5; color: #2E3A59; }
+
+/* ---------- Encabezado de cada principio ---------- */
+.ul-encabezado { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+.ul-letra {
+  width: 108px; height: 108px; border-radius: 24px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Fredoka", sans-serif; font-size: 72px; font-weight: 700;
+}
+
+/* ---------- Hoja de cuaderno ---------- */
+.ul-cuaderno {
+  background-color: #FFFFFF;
+  background-image:
+    linear-gradient(to right, transparent 54px, #F2A7A7 54px, #F2A7A7 56px, transparent 56px),
+    repeating-linear-gradient(to bottom, transparent 0, transparent 35px, #CFE0F2 35px, #CFE0F2 36px);
+  border: 2px solid #F0E4C8;
+  border-radius: 18px;
+  padding: 20px 28px 20px 76px;
+}
+.ul-cuaderno ul {
+  margin: 0; padding-left: 22px;
+  font-family: "Patrick Hand", cursive; font-size: 22px; line-height: 36px; color: #2E3A59;
+}
+.ul-cuaderno li { margin: 0; }
+
+/* ---------- Juego ---------- */
+[class*="st-key-juego-"] { background: #FFFFFF; border-width: 2px !important; border-radius: 22px !important; padding: 28px !important; }
+.ul-escenario {
+  height: 260px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.ul-escenario svg { max-width: 92%; height: auto; }
+.ul-mensaje { border-radius: 14px; padding: 14px 18px; font-size: 18px; line-height: 1.45; font-weight: 700; color: #2E3A59; }
+
+/* Pájaros que vuelan (Dirección común) */
+@keyframes ul-volar { from { transform: translateY(0); } to { transform: translateY(-44px); } }
+.ul-vuela { animation: ul-volar 0.8s cubic-bezier(.3, .7, .2, 1) forwards; }
+
+/* ---------- En la vida real ---------- */
+.ul-vida { border-radius: 22px; padding: 22px 28px; }
+.ul-vida p { margin: 4px 0 0; font-size: 19px; line-height: 1.5; color: #2E3A59; }
+
+/* ---------- Botones Anterior / Siguiente ---------- */
+.st-key-nav-anterior a, .st-key-nav-siguiente a {
+  border: 2px solid #2E3A59; border-radius: 999px; padding: 8px 22px !important; min-height: 44px;
+}
+.st-key-nav-anterior a p, .st-key-nav-siguiente a p { font-weight: 700; font-size: 17px; }
+.st-key-nav-siguiente a p { color: #FFFFFF !important; }
+
+/* ---------- Inicio: acróstico GESTALT ---------- */
+[class*="st-key-fila-"] { background: #FFFFFF; border-width: 2px !important; border-radius: 20px !important; padding: 10px 20px 10px 10px !important; }
+.ul-fila-letra {
+  width: 80px; height: 80px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Fredoka", sans-serif; font-size: 54px; font-weight: 700;
+}
+.ul-fila-nombre { margin: 0; font-family: "Fredoka", sans-serif; font-size: 24px; font-weight: 600; }
+.ul-fila-corto { margin: 2px 0 0; font-size: 17px; line-height: 1.4; color: #3E4A69; }
+[class*="st-key-fila-"] [data-testid="stPageLink"] p { font-family: "Fredoka", sans-serif; font-weight: 600; font-size: 16px; }
