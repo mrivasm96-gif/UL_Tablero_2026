@@ -1,0 +1,15 @@
+[theme]
+base = "light"
+primaryColor = "#2E3A59"
+backgroundColor = "#FFF8E8"          # papel crema
+secondaryBackgroundColor = "#FFF1C9"
+textColor = "#2E3A59"
+font = "Andika:https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap, sans-serif"
+headingFont = "Fredoka:https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap, sans-serif"
+baseFontSize = 17
+baseRadius = "12px"
+borderColor = "#F0E4C8"
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#FFF1C9"
